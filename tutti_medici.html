@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+    Studio Medico - Lista di tutti i medici
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mycard">
+    <h1>Medici</h1>
+    <ul>
+      {% for x in mieimedici %}
+        <li onclick="window.location = 'dettagli_medici/{{ x.id }}'">{{ x.nome }} {{ x.cognome }}</li>
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}  
