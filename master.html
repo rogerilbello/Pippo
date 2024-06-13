@@ -2,19 +2,16 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>{% block title %}{% endblock %}</title>
-<link rel="stylesheet" href="{% static 'mio_stile.css' %}">
-</head>
-<body>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'mio_stile.css' %}" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">HOME</a>
+      <a href="/medico">MEDICI</a>
+    </div>
 
-<div class="topnav">
-    <a href="/">HOME</a>
-    <a href="/medico">MEDICI</a>
-</div>
-
-{% block content %}
-{% endblock %}
-
-</body>
+    {% block content %} {% endblock %}
+  </body>
 </html>
